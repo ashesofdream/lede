@@ -10,12 +10,13 @@
 name: OpenWrt-CII
 
 on:
-  schedule:
-    - cron: 0 20 * * *
-#  push:
-#    branches:
-#      - master
-
+# schedule:
+#    - cron: 0 20 * * *
+  push:
+    branches:
+      - master
+  watch:
+    types:started
 jobs:
 
   build_openwrt:
