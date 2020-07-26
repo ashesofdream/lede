@@ -16,7 +16,7 @@ on:
     branches:
       - master
   watch:
-    types:started
+    types: started
 jobs:
 
   build_openwrt:
